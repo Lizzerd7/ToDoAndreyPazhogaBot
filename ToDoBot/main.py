@@ -6,7 +6,7 @@ import random
 
 import sqlite3
 
-bot = telebot.TeleBot('5810337686:AAHWBSQ0KTJkkyjvpUCvTlyArVc4_qMfMS8')
+bot = telebot.TeleBot('5810337686:AAF5Ai3EdcJjlEEZfEfEmFn2a5r1Cm5QUF4')
 
 
 # 👉 🙏 👆 👇 😅 👋 🙌 ☺️ ❗ ️‼️ ✌️ 👌 ✊ 👨‍💻  🤖 😉  ☝️ ❤️ 💪 ✍️ 🎯  ⛔  ️✅ 📊📈🧮   🗳️
@@ -36,7 +36,9 @@ def start(message):
     first_name = message.from_user.first_name
     last_name = message.from_user.last_name
 
-    message_text = f'Привет {first_name}!\nВаш user ID: {ID}\nВерно ли я узнал Вашу фамилию {last_name}?'
+    message_text = f'Привет {first_name}!\n' \
+                   f'Ваш user ID: {ID}\n' \
+                   f'Верно ли я узнал Вашу фамилию {last_name}?'
 
     markup = types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=2)
     btn0 = types.KeyboardButton('Добавить задачу')
